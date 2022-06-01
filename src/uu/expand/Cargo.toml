@@ -23,3 +23,7 @@ uucore_procs = { version=">=0.0.5", package="uucore_procs", path="../../uucore_p
 [[bin]]
 name = "expand"
 path = "src/main.rs"
+
+[profile.release]
+lto = true
+opt-level = 's'

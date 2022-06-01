@@ -26,3 +26,7 @@ winapi = { version = "0.3", features = ["lmcons"] }
 [[bin]]
 name = "whoami"
 path = "src/main.rs"
+
+[profile.release]
+lto = true
+opt-level = 's'

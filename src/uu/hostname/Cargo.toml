@@ -25,3 +25,7 @@ winapi = { version="0.3", features=["sysinfoapi", "winsock2"] }
 [[bin]]
 name = "hostname"
 path = "src/main.rs"
+
+[profile.release]
+lto = true
+opt-level = 's'

@@ -24,3 +24,7 @@ walkdir = "2.2"
 [[bin]]
 name = "chown"
 path = "src/main.rs"
+
+[profile.release]
+lto = true
+opt-level = 's'

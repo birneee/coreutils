@@ -25,3 +25,7 @@ redox_syscall = "0.1"
 [[bin]]
 name = "test"
 path = "src/main.rs"
+
+[profile.release]
+lto = true
+opt-level = 's'

@@ -30,3 +30,7 @@ wasi = "0.10"
 [[bin]]
 name = "df"
 path = "src/main.rs"
+
+[profile.release]
+lto = true
+opt-level = 's'

@@ -31,3 +31,7 @@ atty = "0.2"
 [[bin]]
 name = "ls"
 path = "src/main.rs"
+
+[profile.release]
+lto = true
+opt-level = 's'

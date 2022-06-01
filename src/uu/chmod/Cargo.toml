@@ -23,3 +23,7 @@ walkdir = "2.2"
 [[bin]]
 name = "chmod"
 path = "src/main.rs"
+
+[profile.release]
+lto = true
+opt-level = 's'

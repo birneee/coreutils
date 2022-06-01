@@ -29,3 +29,7 @@ time = "0.1.40"
 [[bin]]
 name = "install"
 path = "src/main.rs"
+
+[profile.release]
+lto = true
+opt-level = 's'

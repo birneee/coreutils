@@ -24,3 +24,7 @@ winapi = { version = "0.3", features = ["errhandlingapi", "fileapi", "handleapi"
 [[bin]]
 name = "sync"
 path = "src/main.rs"
+
+[profile.release]
+lto = true
+opt-level = 's'

@@ -27,3 +27,7 @@ redox_syscall = "0.1"
 [[bin]]
 name = "tail"
 path = "src/main.rs"
+
+[profile.release]
+lto = true
+opt-level = 's'

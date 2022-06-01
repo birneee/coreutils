@@ -39,3 +39,7 @@ xattr="0.2.1"
 [[bin]]
 name = "cp"
 path = "src/main.rs"
+
+[profile.release]
+lto = true
+opt-level = 's'

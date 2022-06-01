@@ -26,3 +26,7 @@ libstdbuf = { version="0.0.3", package="uu_stdbuf_libstdbuf", path="src/libstdbu
 [[bin]]
 name = "stdbuf"
 path = "src/main.rs"
+
+[profile.release]
+lto = true
+opt-level = 's'

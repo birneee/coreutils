@@ -22,3 +22,7 @@ walkdir = "2.2"
 [[bin]]
 name = "chgrp"
 path = "src/main.rs"
+
+[profile.release]
+lto = true
+opt-level = 's'
